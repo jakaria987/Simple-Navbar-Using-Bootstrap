@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.arrow {
+  color: white;
+  font-size: 24px;
+}
+.container {
+  width: 1280px;
+  background: linear-gradient(to right, rgb(244, 211, 1), rgb(255, 146, 4));
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.menuwrap ul {
+  display: flex;
+  gap: 30px;
+  margin-right: 50px;
+}
+.menuwrap ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  padding: 20px 0;
+}
+.menuwrap ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Playwrite GB S", cursive;
+}
+.drop {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  display: none;
+}
+.menuwrap ul li:hover .drop {
+  display: block;
+}
+.drop ul li {
+  width: 110px;
+  color: white;
+  background-color: rgb(255, 146, 4);
+  padding: 10px 20px;
+  text-wrap: nowrap;
+  font-size: 20px;
+}
+.drop ul {
+  display: block;
+}
+.menuwrap ul li:hover .arrow {
+  transform: rotate(180deg);
+}
+.menuwrap ul li ul li:hover {
+  background-color: rgb(247, 208, 13);
+  color: black;
+}
